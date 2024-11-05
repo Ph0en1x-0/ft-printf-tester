@@ -1,16 +1,57 @@
-SRC = main.c
+I = -I includes/
 
-all: library test
+all: library m d i u c s p x X
 
-library:
-	@../make
-	@cp ../libftprintf.a .
-	@cp ../ft_printf.h .
+m: library
+	@cc srcs/mandatory_header.c -L. -lftprintf -o Prog $(I)
+	@./Prog
+	@rm -f Prog
 
-test:
-	cc $(SRC) -L. -lftprintf -o testProg
-	@./testProg
+d: library
+	@cc srcs/testd.c -L. -lftprintf -o prog $(I)
+	@./prog
+	@rm -f Prog
+
+i: library
+	@cc srcs/testi.c -L. -lftprintf -o prog $(I)
+	@./prog
+	@rm -f Prog
+
+u: library
+	@cc srcs/testu.c -L. -lftprintf -o prog $(I)
+	@./prog
+	@rm -f Prog
+
+c: library
+	@cc srcs/testc.c -L. -lftprintf -o prog $(I)
+	@./prog
+	@rm -f Prog
+
+s: library
+	@cc srcs/tests.c -L. -lftprintf -o prog $(I)
+	@./prog
+	@rm -f Prog
+
+p: library
+	@cc srcs/testp.c -L. -lftprintf -o prog $(I)
+	@./prog
+	@rm -f Prog
+
+x: library
+	@cc srcs/testx.c -L. -lftprintf -o prog $(I)
+	@./prog
+	@rm -f Prog
+
+X: library
+	@cc srcs/testX.c -L. -lftprintf -o prog $(I)
+	@./prog
+	@rm -f Prog
+
+library: clean
+	cd ../ && make
+	cp ../libftprintf.a .
+	cp ../ft_printf.h ./includes
 
 clean:
-	@../fclean
-	@rm -f testProg libftprintf.a ft_printf.h
+	rm -f testProg libftprintf.a includes/ft_printf.h
+	cd ../ && make fclean
