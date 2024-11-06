@@ -1,6 +1,6 @@
 I = -I includes/
 
-all: library m d i u c s p x X
+all: library m d i u c s p x CX
 
 m: library
 	@cc srcs/mandatory_header.c -L. -lftprintf -o Prog $(I)
@@ -37,12 +37,12 @@ p: library
 	@./prog
 	@rm -f Prog
 
-x: library
+x:
 	@cc srcs/testx.c -L. -lftprintf -o prog $(I)
 	@./prog
 	@rm -f Prog
 
-X: library
+CX: library
 	@cc srcs/testCX.c -L. -lftprintf -o prog $(I)
 	@./prog
 	@rm -f Prog
