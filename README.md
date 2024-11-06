@@ -10,11 +10,12 @@ The phoenix-printf-tester is a test suite designed to validate the functionality
 
 ## Directory Structure
 .
-├─ft_printf/
-│	├── Makefile
+├── ft_printf/
+│   ├── Makefile
 │   ├── ft_printf.h
-│	├── libftprintf.a
-│	└── phoenix-printf-tester/
+│   ├── libftprintf.a
+│   └── phoenix-printf-tester/
+
 
 ## Requirements
 
