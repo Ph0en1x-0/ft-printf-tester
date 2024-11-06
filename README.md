@@ -23,7 +23,7 @@ The phoenix-printf-tester is a test suite designed to validate the functionality
 ## Usage
 when you have everything set up, you can run the following tests inside phoenix-printf-tester/.
 
-- make : runs a test for %s, %c, %x, %X, %u, %d, %i, return value
+- make : runs a test for %s, %c, %x, %X, %u, %d, %i
 - make s : runs a test for %s
 - make c : runs a test for %c
 - make i : runs a test for %i
