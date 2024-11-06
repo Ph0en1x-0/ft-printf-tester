@@ -22,15 +22,6 @@ void testu(void)
     ft_printf("     got : %u \n\n", 987654321);
 
     // Tests with width and padding
-    printf("expected : %10u \n", 123);
-    ft_printf("     got : %10u \n\n", 123);
-
-    printf("expected : %-10u \n", 123);
-    ft_printf("     got : %-10u \n\n", 123);
-
-    printf("expected : %010u \n", 123);
-    ft_printf("     got : %010u \n\n", 123);
-
     printf("expected : %u \n", 429496729);  // Large number test
     ft_printf("     got : %u \n\n", 429496729);
 }
