@@ -11,7 +11,7 @@ void	testd(void);
 void	testi(void);
 void	testu(void);
 void	testx(void);
-void	testX(void);
+void 	testCX(void);
 void	tests(void);
 void	testp(void);
 void	testc(void);

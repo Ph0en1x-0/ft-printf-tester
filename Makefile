@@ -43,7 +43,7 @@ x: library
 	@rm -f Prog
 
 X: library
-	@cc srcs/testX.c -L. -lftprintf -o prog $(I)
+	@cc srcs/testCX.c -L. -lftprintf -o prog $(I)
 	@./prog
 	@rm -f Prog
 

@@ -2,11 +2,11 @@
 
 void print_mandatory_header(void)
 {
-    printf("\n***********************************\n");
-    printf("*                                 *\n");
-    printf("*           MANDATORY             *\n");
-    printf("*                                 *\n");
-    printf("***********************************\n\n");
+    printf("\033[0;35m"); // Set color to purple
+    printf("╔══════════════════════════════════╗\n");
+    printf("║            ★ PHOENIX ★           ║\n");
+    printf("╚══════════════════════════════════╝\n");
+    printf("\033[0m"); // Reset color
 }
 
 int main()

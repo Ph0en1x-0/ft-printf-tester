@@ -1,6 +1,6 @@
 #include "header.h"
 
-void testX(void)
+void testCX(void)
 {
     printf("------------ TEST [%%X] ------------\n");      // %x
 
@@ -22,10 +22,13 @@ void testX(void)
 
     printf("expected : %X \n", -1);
     ft_printf("     got : %X \n\n", -1);
+
+	printf("expected : %X \n", -1232);
+    ft_printf("     got : %X \n\n", -1232);
 }
 
 int	main()
 {
-	testX();
+	testCX();
 	return (0);
 }

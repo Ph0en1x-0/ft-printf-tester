@@ -7,8 +7,8 @@ void testi(void)
     printf("expected : %i \n", 2147483647);
     ft_printf("     got : %i \n\n", 2147483647);
 
-//    printf("expected : %i \n", -2147483648);
-//    ft_printf("     got : %i \n\n", -2147483648);
+    printf("expected : %i \n", -2147483648);
+    ft_printf("     got : %i \n\n", -2147483648);
 
     printf("expected : %i \n", 0);
     ft_printf("     got : %i \n\n", 0);
