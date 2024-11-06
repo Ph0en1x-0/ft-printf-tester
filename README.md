@@ -9,7 +9,7 @@ The phoenix-printf-tester is a test suite designed to validate the functionality
 - [Usage](#usage)
 
 ## Directory Structure
-![Tree structure](~/Pictures/Screenshots/readme.png)
+![Tree structure](./tree.png)
 
 
 ## Requirements
